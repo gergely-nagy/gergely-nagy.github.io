@@ -1,0 +1,12 @@
+@import "../../../common/scss/variables";
+@import "../../../common/scss/functions";
+@import "../../../common/scss/helpers";
+@import "./info";
+
+.home {
+  @extend .cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

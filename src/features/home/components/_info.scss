@@ -1,0 +1,96 @@
+@media (max-width: 640px) {
+  .info {
+    overflow: auto;
+
+    img {
+      width: 7.5em;
+    }
+
+    .title,.sub-title {
+      text-align: center;
+    }
+
+    .title {
+      font-size: 1.5em;
+    }
+
+    .sub-title {
+      font-size: 1.25em;
+    }
+
+    .contact-info {
+      font-size: 1em !important;
+    }
+  }
+}
+
+.info {
+  z-index: 100;
+
+  * {
+    z-index: 100;
+  }
+
+  .title,.sub-title {
+    margin: 0;
+  }
+
+  .title {
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+  }
+
+  .sub-title {
+    margin-bottom: 0.5em;
+    a {
+      margin-left: 0.3em;
+    }
+  }
+
+  .contact-info {
+    font-size: 1.35em;
+    margin: 0.25em 0;
+    padding: 0.2em 0;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+
+    &:before {
+      content: ' ';
+      position: absolute;
+      background: black;
+      width: 0;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      &:before {
+        width: 125%;
+        left: -12.5%;
+      }
+    }
+
+    i {
+      transition: all 0.3s ease-in-out;
+      margin-right: 0.35em;
+    }
+
+    $colorList: twitter linkedin medium codepen rss github;
+
+    @each $color in $colorList {
+      &.#{$color} {
+        i {
+          color: calculate-color($color)
+        }
+
+        &:before {
+          background-color: calculate-color($color);
+        }
+      }
+    }
+  }
+}

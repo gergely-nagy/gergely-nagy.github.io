@@ -1,0 +1,17 @@
+@function calculate-color($color) {
+  @if $color == twitter {
+    @return $twitterColor
+  } @else if $color == linkedin {
+    @return $linkedinColor
+  } @else if $color == medium {
+    @return $mediumColor
+  } @else if $color == codepen {
+    @return $codepenColor
+  } @else if $color == rss {
+    @return $rssColor
+  } @else if $color == github {
+    @return $githubColor
+  } @else {
+    @return black;
+  }
+}

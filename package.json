@@ -1,0 +1,49 @@
+{
+  "name": "my-page",
+  "version": "1.0.0",
+  "description": "My Personal Web Page",
+  "scripts": {
+    "start": "hjs-dev-server",
+    "build": "node ./node_modules/webpack/bin/webpack.js  --config webpack.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gergely-nagy/gergely-nagy.git"
+  },
+  "keywords": [
+    "React",
+    "Webpack"
+  ],
+  "author": "Gergely Nagy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gergely-nagy/gergely-nagy/issues"
+  },
+  "homepage": "https://github.com/gergely-nagy/gergely-nagy#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.0",
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.22.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.9.0",
+    "hjs-webpack": "^8.4.3",
+    "json-loader": "^0.5.4",
+    "less": "^2.7.2",
+    "node-sass": "^4.3.0",
+    "postcss-loader": "^1.2.2",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.14.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "0.0.4",
+    "particles.js": "^2.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}
